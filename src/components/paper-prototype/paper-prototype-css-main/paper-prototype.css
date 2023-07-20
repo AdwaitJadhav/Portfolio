@@ -1,0 +1,121 @@
+@font-face {
+  font-family: Handwritten;
+  src: url(ArchitectsDaughter-Regular.ttf);
+}
+@font-face {
+  font-family: Mono;
+  src: url(Jackwrite.woff2);
+}
+pre, code {
+}
+
+
+#skill p,img:not(html):not(body) {
+   font-size: 1.5rem;
+	padding: 0.5rem 5rem;
+	margin: .5rem .25rem .25rem;
+	color: #41403E;
+	outline: none;
+	box-shadow: 1em 1.5em 1.5em -1em rgba(0, 0, 0, 0.5);
+	border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+	box-sizing: border-box;
+	border: solid 0.1em #4140344E;
+   width:fit-content;
+   max-width: 99%;
+   overflow: hidden;
+   -webkit-transition: -webkit-transform .5s ease-in-out;
+    -ms-transition: -ms-transform .5s ease-in-out;
+    transition: transform .5s ease-in-out;  
+}
+
+
+
+/* Media */
+#resume img, video, iframe {
+   padding: 0 !important;
+   margin: 0 !important;
+}
+
+#skill p::cue {
+  color: #d9e365;
+  background-color: rgba(0, 0, 0, 0.7);
+  font-family: "Mono";
+  font-size: 2rem;
+}
+
+
+/* Rotations */
+
+#skill p:nth-child(odd):not(body):not(html){
+ transform: rotate(3deg);
+}
+#skill p:nth-child(even):not(body):not(html) {
+   transform: rotate(-3deg);
+}
+#skill p:hover:not(body):not(html){
+   transform: rotate(0deg);
+}
+#skill p:hover:nth-child(even):not(body):not(html) {
+   transform: rotate(0deg);
+}
+#skill hr {
+   width: 50% !important;
+   padding: 0 !important;
+   margin-left: auto !important;
+   margin-right: auto !important;
+   border: dotted gray .1rem !important;
+}
+
+#skill h1 {
+   font-size: 2rem !important;
+}
+#skill h2 {
+   font-size: 1.75rem !important;
+}
+#skill h3 {
+   font-size: 1.5rem !important;
+}
+#skill h4 {
+   font-size: 1.25rem !important;
+}
+#skills h5 {
+   font-size: 1.15rem !important;
+}
+#skill h6 {
+   font-size: 1.05rem !important;
+}
+
+#skill button, input[type="button"], input[type="reset"], input[type="submit"] {
+   box-shadow: #8080803d .5rem .5em !important;
+}
+
+#skill ol {
+   list-style-type: lower-roman;
+   list-style-position: inside;
+}
+#skill ul {
+   list-style-type: square;
+   list-style-position: inside;
+}
+#skill select {
+   overflow: auto !important;
+}
+@media (max-width: 768px){
+   #skills {
+      margin-top: 10px;
+      padding: 10px;
+      align-items: center;
+    }
+  
+    #skill p {
+      padding: 10px; /* Adjust padding for better mobile display */
+      margin: 5px;
+      width: 100%; /* Set full width for skill items on small screens */
+      font-size: 1.5rem; /* Reduce font size for better mobile display */
+    }
+  
+    #resume {
+      margin-left: 0; /* Remove left margin on small screens */
+      padding: 10px; /* Adjust padding for better mobile display */
+    }
+}

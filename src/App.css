@@ -1,0 +1,270 @@
+/* Common styles */
+* {
+    box-sizing: border-box;
+  }
+  
+  body,
+  html {
+    margin: 0;
+    height: 100%;
+    color: black;
+    margin: 0;
+    max-width: 100% !important;
+    overflow: auto;
+    background-image: url("components/vintage-grunge-paper-background.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: type-writer1;
+  }
+  
+  /* Navbar */
+  #navbar {
+    height: 82px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  
+  #navbar a {
+    font-family: type-writer1;
+    font-size: large;
+    color: white;
+    text-decoration: none;
+    padding: 2%;
+    padding-right: 3%;
+    padding-left: 3%;
+    transition: 0.2s font-size;
+  }
+  
+  #navbar a:hover {
+    font-size: larger;
+  }
+  
+  /* Fonts */
+  @font-face {
+    font-family: 'type-writer1';
+    src: url('components/fonts/La Machine Company.ttf') format('truetype');
+  }
+  
+  @font-face {
+    font-family: 'type-writer2';
+    src: url('components/fonts/Bohemian Typewriter.ttf') format('truetype');
+  }
+  
+  /* Intro section */
+  .intro {
+  
+    background-size: cover;
+    font-family: type-writer2;
+    text-align: center;
+    font-size: 2rem;
+    padding: 8rem;
+    color: black;
+  }
+  
+  h1 {
+    font-size: 3rem;
+    font-family: type-writer1;
+  }
+  
+  h2 {
+    font-size: 2rem;
+    font-family: type-writer1;
+  }
+  
+  p {
+    font-family: type-writer2;
+  }
+  
+  /* Timer section */
+  .timer {
+    text-align: center;
+    padding: 1rem;
+  }
+  
+  .timer p {
+    display: inline-block;
+    color: rgb(0, 0, 0);
+    padding: 1rem;
+    font-size: 1.5rem;
+    font-family: type-writer1;
+  }
+  
+  /* Text time section */
+  #text-time {
+    text-align: center;
+    padding: 1rem;
+  }
+  
+  #text-time p {
+    display: inline-block;
+    color: rgb(0, 0, 0);
+    padding: 0.5rem;
+    font-size: 1.3rem;
+    font-family: type-writer1;
+  }
+  
+  #type-text {
+    position: sticky;
+    height: 100px;
+    margin-bottom: 125px;
+    
+  }
+
+
+  h2 {
+    text-align: center;
+    font-family: type-writer2;
+  }
+
+  #skill-section{
+
+  }
+
+  #skills {
+    margin-top: 50px;
+    margin-bottom: 150px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+  }
+  
+  #skill p {
+    background-color: rgb(238, 238, 153);
+    font-size: 2.75rem;
+    padding: 10px; /* Adjust padding for better mobile display */
+    margin: 5px; /* Add margin between skill items */
+    width: 130px; /* Set a fixed width for skill items */
+    text-align: center; /* Center the text within skill items */
+  }
+  
+  #resume {
+    
+    margin-left:150px ;
+    padding-right: 20px; /* Adjust padding for better mobile display */
+  }
+  
+  #projects {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 100px;
+      
+  }
+  .project {
+    text-align: center;
+    height: auto; /* Remove fixed height to adapt to content */
+    width: 200px;
+    margin: 20px; /* Add margin between projects for better mobile display */
+  }
+
+  .project p, h3 {
+    background-color: rgb(245, 245, 113) !important;
+    font-family: type-writer2;
+  }
+
+  #about {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    height: auto; /* Remove fixed height to adapt to content */
+    width: 100%;
+    text-align: center;
+    padding: 50px 0; /* Adjust padding for better mobile display */
+    padding-bottom: 200px;
+    font-family: type-writer2;
+  }
+  #about h2{
+    padding-top: 50px;
+  }
+  .social {
+    margin: 20px;
+    display: inline-flex;
+    justify-content: center; /* Center elements horizontally */
+  }
+
+  /* Media queries for mobile responsiveness */
+  @media (max-width: 768px) {
+    /* Navbar */
+    #navbar {
+      height: 60px;
+    }
+  
+    #navbar a {
+      font-size: small;
+      padding: 1.5%;
+      padding-right: 2%;
+      padding-left: 2%;
+    }
+  
+    #navbar a:hover {
+      font-size: medium;
+    }
+  
+    /* Intro section */
+    .intro {
+      font-size: 1.5rem;
+    }
+  
+    h1 {
+      font-size: 2.5rem;
+    }
+  
+    h2 {
+      font-size: 1.5rem;
+    }
+  
+    /* Timer section */
+    .timer p {
+      font-size: 1.2rem;
+      padding: 0.8rem;
+    }
+  
+    /* Text time section */
+    #text-time p {
+      font-size: 1rem;
+      padding: 0.4rem;
+    }
+  
+    #type-text {
+      position: static;
+      transform: none;
+    }
+  
+    /* Skills section */
+    #skills {
+      margin-top: 10px;
+      padding: 10px;
+      align-items: center;
+    }
+  
+    #skill p {
+      padding: 10px; /* Adjust padding for better mobile display */
+      margin: 5px;
+      width: 100%; /* Set full width for skill items on small screens */
+      font-size: 1.5rem; /* Reduce font size for better mobile display */
+    }
+  
+    #resume {
+      margin-left: 0; /* Remove left margin on small screens */
+      padding: 10px; /* Adjust padding for better mobile display */
+    }
+  
+    /* About section */
+    #about {
+      padding: 20px 0; /* Adjust padding for better mobile display */
+    }
+  
+    /* Projects section */
+    #projects {
+      flex-direction: column; /* Display projects in a column on small screens */
+      align-items: center;
+      width: 300px;
+      margin-left: 30px;
+    }
+    .project img{
+      display: none;
+    }
+  }
