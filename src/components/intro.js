@@ -7,12 +7,12 @@ export default function Intro(props) {
   const [isHide2, setIsHide2] = useState(false);
   setTimeout(() => {
     setIsHide2(true);
-  }, 12000);
+  }, 13000);
 
   useEffect(() => {
     const timeoutId = setTimeout(() => {
       setIsHide1(true);
-    }, 6000);
+    }, 6100);
 
     return () => clearTimeout(timeoutId); // Clean up the timeout on unmount
   }, []);
@@ -27,7 +27,7 @@ export default function Intro(props) {
       <div id="type-text">
       {isHide1 ? <Text string="Problem Solver" /> : null}
       {!isHide1 ? <Text string="Creative Thinker" /> : null}
-      {isHide2 ? <Write text="Student" delay={125}/> : null}
+      {isHide2 ? <Write text="Student" delay={140}/> : null}
       </div>
     </div>
     </>
