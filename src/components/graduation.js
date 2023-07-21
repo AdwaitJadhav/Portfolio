@@ -27,7 +27,7 @@ const Timer = () => {
   }, []);
 
   return (
-    <>
+    <div id="graduation">
       <div className="timer" role="timer">
        <p>Time until graduation<br/><span>approx...</span> </p>
         <br/>      
@@ -44,7 +44,7 @@ const Timer = () => {
         <p className="time-text">Minutes</p>
         <p className="time-text">Seconds</p>
       </div>
-    </>
+    </div>
   );
 };
 
