@@ -7,7 +7,7 @@ import './paper-prototype/paper-prototype-css-main/paper-prototype-project.css';
 
 const Projects = ()=>{
     return(
-        <>
+        <div id="projects-section">
             <h2>Projects</h2>
             <div id="projects">
                 <div className="project">
@@ -28,7 +28,7 @@ const Projects = ()=>{
                         <p>Implemented the Adaline learning algorithm <br></br>from scratch</p>
                 </div>
             </div>
-        </>
+        </div>
     );
 }
 
