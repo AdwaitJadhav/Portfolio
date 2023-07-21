@@ -6,14 +6,14 @@ const Text = (props) => {
     const [isHide1, setIsHide1] = useState(false);
   
     useEffect(() => {
-      const timeoutId = setTimeout(() => setIsHide1(true), 3500);
+      const timeoutId = setTimeout(() => setIsHide1(true), 3700);
   
       return () => clearTimeout(timeoutId); // Clean up the timeout on unmount
     }, []);
   
     return (
       <p>
-        {!isHide1 ? <Write text={string} delay={125} /> : <Remove text={string} delay={125} />}
+        {!isHide1 ? <Write text={string} delay={140} /> : <Remove text={string} delay={140} />}
       </p>
     );
   };
