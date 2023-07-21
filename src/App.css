@@ -11,9 +11,7 @@
     margin: 0;
     max-width: 100% !important;
     overflow: auto;
-    background-image: url("components/vintage-grunge-paper-background.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
+    
     font-family: type-writer1;
   }
   
@@ -55,7 +53,9 @@
   
   /* Intro section */
   .intro {
-  
+    background-image: url("components/ripped-piece-white-paper.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
     background-size: cover;
     font-family: type-writer2;
     text-align: center;
@@ -79,7 +79,15 @@
   }
   
   /* Timer section */
+  #graduation {
+    background-image: url("components/crinkled-paper-texture.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
   .timer {
+    
     text-align: center;
     padding: 1rem;
   }
@@ -94,6 +102,7 @@
   
   /* Text time section */
   #text-time {
+    
     text-align: center;
     padding: 1rem;
   }
@@ -120,12 +129,15 @@
   }
 
   #skill-section{
-
+    padding: 50px;
+    background-image: url("components/view-white-crumpled-paper.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 
   #skills {
-    margin-top: 50px;
-    margin-bottom: 150px;
+    
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -146,12 +158,18 @@
     margin-left:150px ;
     padding-right: 20px; /* Adjust padding for better mobile display */
   }
-  
+  #projects-section{
+    padding: 50px;
+    background-image: url("components/crinkled-paper-texture.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
   #projects {
+  
       display: flex;
       justify-content: center;
       align-items: center;
-      margin: 100px;
       
   }
   .project {
@@ -172,14 +190,16 @@
     height: auto; /* Remove fixed height to adapt to content */
     width: 100%;
     text-align: center;
-    padding: 50px 0; /* Adjust padding for better mobile display */
+    padding: 40px 0; /* Adjust padding for better mobile display */
     padding-bottom: 200px;
-    font-family: type-writer2;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   }
   #about h2{
-    padding-top: 50px;
+    margin-bottom: 100px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   }
   .social {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin: 20px;
     display: inline-flex;
     justify-content: center; /* Center elements horizontally */
