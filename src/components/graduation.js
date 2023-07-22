@@ -7,17 +7,15 @@ const Timer = () => {
   const [seconds, setSeconds] = useState(0);
   const [years, setYears] = useState(0);
 
-  const deadline = "June 30, 2025";
+  const deadline = "July 20, 2025";
 
   const getTime = () => {
     const time = Date.parse(deadline) - Date.now();
-    setYears(Math.floor(time / 31556952000));
-    const remainingTime = time - years*31556952000;
-    const remainingDays = Math.floor(remainingTime / (1000 * 60 * 60 * 24));
+    const remainingDays = Math.floor(time / (1000 * 60 * 60 * 24));
     setDays(remainingDays);
-    setHours(Math.floor((remainingTime / (1000 * 60 * 60)) % 24));
-    setMinutes(Math.floor((remainingTime / (1000 * 60)) % 60));
-    setSeconds(Math.floor((remainingTime / 1000) % 60));
+    setHours(Math.floor((time / (1000 * 60 * 60)) % 24));
+    setMinutes(Math.floor((time / (1000 * 60)) % 60));
+    setSeconds(Math.floor((time/ 1000) % 60));
   };
 
   useEffect(() => {
@@ -30,15 +28,13 @@ const Timer = () => {
     <div id="graduation">
       <div className="timer" role="timer">
        <p>Time until graduation<br/><span>approx...</span> </p>
-        <br/>      
-        <p id="years">{years < 10 ? "0" + years : years}</p>
+        <br/> 
         <p id="day">{days < 10 ? "0" + days : days}</p>
         <p id="hour">{hours < 10 ? "0" + hours : hours}</p>
         <p id="minute">{minutes < 10 ? "0" + minutes : minutes}</p>
         <p id="second">{seconds < 10 ? "0" + seconds : seconds}</p>
       </div>
       <div id="text-time">
-        <p className="time-text">Years</p>
         <p className="time-text">Days</p>
         <p className="time-text">Hours</p>
         <p className="time-text">Minutes</p>
