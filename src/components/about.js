@@ -3,12 +3,12 @@ import { SocialIcon } from "react-social-icons";
 const About=()=>{
     return(
         <>
-            
             <div id="about">
-            <h2>About</h2>
+            <h2>Contact</h2>
+            <p>You can email me <a href="mailto: adwaitrjadhav24@gmail.com">here</a></p>
             <p>Checkout my socials</p>
+
                 <div className="social">
-                    
                     <SocialIcon url="https://www.linkedin.com/in/adwait-jadhav-251470232/" />
                 </div>
                 <div className="social">
