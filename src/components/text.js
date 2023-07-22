@@ -6,7 +6,7 @@ const Text = (props) => {
     const [isHide1, setIsHide1] = useState(false);
   
     useEffect(() => {
-      const timeoutId = setTimeout(() => setIsHide1(true), 3700);
+      const timeoutId = setTimeout(() => setIsHide1(true), 3800);
   
       return () => clearTimeout(timeoutId); // Clean up the timeout on unmount
     }, []);
