@@ -19,16 +19,15 @@ export default function Intro(props) {
 
   return (
     <>
-    <div id='bg'>
-    </div>
     <div className="intro">
       <h1>Adwait Jadhav</h1>
       <p>I'm a</p>
       <div id="type-text">
       {isHide1 ? <Text string="Problem Solver" /> : null}
       {!isHide1 ? <Text string="Creative Thinker" /> : null}
-      {isHide2 ? <Write text="Student" delay={140}/> : null}
+      {isHide2 ? <Write text="Student" delay={125}/> : null}
       </div>
+      <p>Still learning, one line at a time...</p>
     </div>
     </>
   );
