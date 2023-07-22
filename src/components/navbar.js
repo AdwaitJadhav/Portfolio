@@ -3,9 +3,9 @@ import ReactDOM from "react-dom";
 export default function Navbar(props){
   return (
     <nav id="navbar">
-            <a href="#about">ABOUT</a>
-            <a href="#projects">PROJECTS</a>
-            <a href="#skills">SKILLS & RESUME</a>
+            <a href="#about">CONTACT</a>
+            <a href="#projects-section">PROJECTS</a>
+            <a href="#skill-section">SKILLS & RESUME</a>
     </nav>
   );
 }
