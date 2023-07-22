@@ -215,85 +215,110 @@
   }
 
   /* Media queries for mobile responsiveness */
-  @media (max-width: 768px) {
-    /* Navbar */
-    #navbar {
-      height: 60px;
-    }
-  
-    #navbar a {
-      font-size: small;
-      padding: 1.5%;
-      padding-right: 2%;
-      padding-left: 2%;
-    }
-  
-    #navbar a:hover {
-      font-size: medium;
-    }
-  
-    /* Intro section */
-    .intro {
-      font-size: 1.5rem;
-    }
-  
-    h1 {
-      font-size: 2.5rem;
-    }
-  
-    h2 {
-      font-size: 1.5rem;
-    }
-  
-    /* Timer section */
-    .timer p {
-      font-size: 1.2rem;
-      padding: 0.8rem;
-    }
-  
-    /* Text time section */
-    #text-time p {
-      font-size: 1rem;
-      padding: 0.4rem;
-    }
-  
-    #type-text {
-      position: static;
-      transform: none;
-    }
-  
-    /* Skills section */
-    #skills {
-      margin-top: 10px;
-      padding: 10px;
-      align-items: center;
-    }
-  
-    #skill p {
-      padding: 10px; /* Adjust padding for better mobile display */
-      margin: 5px;
-      width: 100%; /* Set full width for skill items on small screens */
-      font-size: 1.5rem; /* Reduce font size for better mobile display */
-    }
-  
-    #resume {
-      margin-left: 0; /* Remove left margin on small screens */
-      padding: 10px; /* Adjust padding for better mobile display */
-    }
-  
-    /* About section */
-    #about {
-      padding: 20px 0; /* Adjust padding for better mobile display */
-    }
-  
-    /* Projects section */
-    #projects {
-      flex-direction: column; /* Display projects in a column on small screens */
-      align-items: center;
-      width: 300px;
-      margin-left: 30px;
-    }
-    .project img{
-      display: none;
-    }
+ @media (max-width: 768px) {
+  /* Navbar */
+  #navbar {
+    height: 60px;
   }
+
+  #navbar a {
+    font-size: small;
+    padding: 1.5%;
+    padding-right: 2%;
+    padding-left: 2%;
+  }
+
+  #navbar a:hover {
+    font-size: medium;
+  }
+
+  /* Intro section */
+  .intro {
+    font-size: 1.5rem;
+    padding: 9rem 3rem; /* Adjust padding for better mobile display */
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  /* Timer section */
+  .timer p {
+    font-size: 1.2rem;
+    padding: 0.8rem;
+  }
+
+  /* Text time section */
+  #text-time p {
+    font-size: 1rem;
+    padding: 0.4rem;
+  }
+
+  #type-text {
+    position: static;
+    transform: none;
+  }
+
+  /* Skills section */
+  #skill-section {
+    padding: 20px;
+  }
+
+  #skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #skill p {
+    padding: 10px; /* Adjust padding for better mobile display */
+    margin: 5px;
+    width: 100%; /* Set full width for skill items on small screens */
+    font-size: 1.5rem; /* Reduce font size for better mobile display */
+  }
+
+  #resume {
+    margin-left: 0; /* Remove left margin on small screens */
+    padding: 10px; /* Adjust padding for better mobile display */
+  }
+
+  /* About section */
+  #about {
+    padding: 20px 0; /* Adjust padding for better mobile display */
+    padding-bottom: 100px;
+  }
+
+  /* Projects section */
+  #projects-section {
+    padding: 20px;
+  }
+
+  #projects {
+    flex-direction: column; /* Display projects in a column on small screens */
+    align-items: center;
+    width: 100%;
+  }
+
+  .project {
+    text-align: center;
+    height: auto; /* Remove fixed height to adapt to content */
+    width: 100%;
+    margin: 20px; /* Add margin between projects for better mobile display */
+  }
+
+  .project p,
+  h3 {
+    font-family: type-writer2;
+  }
+
+  .project img {
+    display: none;
+  }
+
+  /* Add more media queries or adjust styles as needed for other screen sizes */
+}
