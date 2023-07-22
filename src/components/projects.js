@@ -1,35 +1,70 @@
 import React from "react";
-import ReactDOM from "react-dom";
-import iic from './iic.png'
-import adaline from './adaline.png'
-import testplanner from './test-planner.png'
+import Timer from "./graduation";
+import iic from './iic.png';
+import adaline from './adaline.png';
+import testplanner from './test-planner.png';
 import './paper-prototype/paper-prototype-css-main/paper-prototype-project.css';
 
-const Projects = ()=>{
-    return(
-        <div id="projects-section">
-            <h2>Projects</h2>
-            <div id="projects">
-                <div className="project">
-                        <img src={iic} alt="iic website" height="150px" width="75px"></img>
-                        <a href="https://iic.isquareit.edu.in/" target="_blank"><h3>IIC Website</h3></a>
-                        <p>I was part of the team which created <br></br>the IIC website<br></br> which is hosted on our college servers right now</p>
-                </div>
-                <div className="project">
-                    
-                        <img src={testplanner} alt="iic website" height="150px" width="75px"></img>
-                        <a href="" target="_blank"><h3>Test Planner</h3></a>
-                        <p>This is a Django project that we created<br></br>for PBL<br></br>This allows creation of user desired <br></br> question sets  based on question banks</p>
-                    
-                </div>
-                <div className="project">
-                        <img src={adaline} alt="iic website" height="150px" width="75px"></img>
-                        <a href="https://colab.research.google.com/drive/1ggtxriXYPqyg4W84nkC9XQlvubPiVhuw?usp=sharing" target="_blank"><h3>Adaline Algorithm</h3></a>
-                        <p>Implemented the Adaline learning algorithm <br></br>from scratch</p>
-                </div>
+const Projects = () => {
+  return (
+    <div id="projects-section">
+      <h2>Projects</h2>
+    
+      <div className="blog-card">
+        <div className="meta">
+          <a href="https://iic.isquareit.edu.in/" target="_blank">
+            <div className="photo" style={{ backgroundImage: `url(${iic})` }}></div>
+          </a>
+          <a href="https://iic.isquareit.edu.in/" target="_blank">
+            <div className="details">
+              <p>Adwait Jadhav, Om Maind, Datta Zairekar</p>
+              <p>December 2022</p>
+              <p className="tags">Click to view project</p>
             </div>
+          </a>
         </div>
-    );
-}
+        <div className="description">
+          <h1>IIC website</h1>
+          <h2>A web development project</h2>
+          <p>I was part of the team which created the IIC website which is hosted on our college servers right now</p>
+        </div>
+      </div>
+      <div className="blog-card alt">
+        <div className="meta">
+          <a href="https://colab.research.google.com/drive/1ggtxriXYPqyg4W84nkC9XQlvubPiVhuw?usp=sharing" target="_blank">
+            <div className="photo" style={{ backgroundImage: `url(${adaline})` }}></div>
+          </a>
+          <a href="https://colab.research.google.com/drive/1ggtxriXYPqyg4W84nkC9XQlvubPiVhuw?usp=sharing" target="_blank">
+            <div className="details">
+              <p>Adwait Jadhav</p>
+              <p>2022</p>
+              <p className="tags">Click to view project</p>
+            </div>
+          </a>
+        </div>
+        <div className="description">
+          <h1>Adaline learning algorithm</h1>
+          <h2>A Machine learning project</h2>
+          <p>Implemented the Adaline learning algorithm from scratch</p>
+        </div>
+      </div>
+      <div className="blog-card">
+        <div className="meta">
+          <div className="photo" style={{ backgroundImage: `url(${testplanner})` }}></div>
+          <div className="details">
+            <p>Adwait Jadhav, Dhruv Gidwani, Pranit Jadhav, Rushikesh Jamnekar</p>
+            <p>2023</p>
+          </div>
+        </div>
+        <div className="description">
+          <h1>Test Planner</h1>
+          <h2>A Python Django project</h2>
+          <p>Implemented the Adaline learning algorithm from scratch</p>
+        </div>
+      </div>
+      <Timer />
+    </div>
+  );
+};
 
-export default Projects
+export default Projects;
