@@ -59,7 +59,7 @@ const Projects = () => {
         <div className="description">
           <h1>Test Planner</h1>
           <h2>A Python Django project</h2>
-          <p>Implemented the Adaline learning algorithm from scratch</p>
+          <p>Created a Python-Django project which allowed faculty to create question sets based on user defined parameters</p>
         </div>
       </div>
       <Timer />
